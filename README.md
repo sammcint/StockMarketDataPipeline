@@ -24,11 +24,12 @@ This project draws on historical stock data found on Kaggle. The data consists o
 #### **Steps to Completion**
 
 1. Create an AWS account
-1. Find dataset and upload to S3
-1. Install and configure Apache Airflow
-1. Write dag and python ETL scripts for the creation and transferring of data 
-1. Turn on dag, and follow workflow as jobs are completed 
-1. Validate data in S3
+2. Create an S3 bucket
+3. Find dataset and upload to S3
+4. Install and configure Apache Airflow
+5. Write dag and python ETL scripts for the creation and transferring of data 
+6. Turn on dag, and follow workflow as jobs are completed
+7. Validate data in Redshift
 
 #### **Technology decisions**
 Amazon Redshift was chosen as the database host as opposed to another Amazon RDS for this project because Redshift is used primarily for reporting and analytics, whereas Amazon RDS is designed for online-transaction processing (OLTP). OLTP workloads require quickly querying specific information and support for transactions like insert, update, and delete and are best handled by Amazon RDS. Amazon Redshift harnesses the scale and resources of multiple nodes and uses a variety of optimizations to provide order of magnitude improvements over traditional databases for analytic and reporting workloads against very large data sets. Amazon Redshift provides an excellent scale-out option as your data and query complexity grows if you want to prevent your reporting and analytic processing from interfering with the performance of your OLTP workload. Now, with the new Federated Query feature, you can easily query data across your Amazon RDS or Aurora database services with Amazon Redshift.
