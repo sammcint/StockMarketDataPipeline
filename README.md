@@ -2,7 +2,7 @@
 
 ## Overview
 
-The purpose of this project is to provide a public database for stock market analysts to query, analyze, and transform data into actionable insights. The application uses Apache Airflow to kick off Python ETL scripts that grabs data that is stored in JSON and CSV format in a bucket on Amazon S3. The data pipeline utilizes python to read in the data from S3, creates and insert data into tables hosted on Redshift. The redshift database and tables can be accessed by anyone with appropriate credentials.
+The purpose of this project is to provide a public database for stock market analysts to query, analyze, and transform data into actionable insights. The application uses Apache Airflow to kick off Python ETL scripts that grab data that stored in JSON and CSV format in an Amazon S3 Bucket. The data pipeline utilizes python to read in the data from S3, performs ETL, then creates and insert data into tables hosted on Redshift. The redshift database and tables can be accessed by anyone with appropriate credentials.
 
 
 #### **Source Data**
