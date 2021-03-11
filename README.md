@@ -9,8 +9,8 @@ The purpose of this project is to provide a public database for stock market ana
 This project draws on historical stock data found on Kaggle. The data consists of daily stock prices for a selection of several thousand stock tickers from NYSE and NASDAQfrom the years 1970-2018, and is stored in csv file size of 1.5 gb. It was not possible to parse the data in a manner that allowed exact decimal calculations, so floating point numbers were provided. You can find the dataset here: https://www.kaggle.com/ehallmar/daily-historical-stock-prices-1970-2018
 
 #### Tools used 
-* **Python** is used as one of the programming languases because of its ease-of-use and fexibility 
-* **SQL** is used for syntax of the table structure and insertion of records 
+* **Python** 
+* **SQL** 
 * **S3** is used as the data storage for the stock data because of its scalability, and support of multiple file formats 
 * **Airflow** is used to orchestrate the steps of the ETL pipeline because of its powerful schedule and monitoring features
 * **Redshift** is used to host the data table because of its ease-of-access and ability to handle OLAP for big data 
